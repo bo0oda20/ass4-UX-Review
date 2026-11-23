@@ -1,0 +1,1204 @@
+
+/* ------------------Start general styles---------------------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Exo", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 78%;
+}
+
+.shadow{
+    box-shadow: 3px 3px black;
+}
+
+.shadow-text{
+    text-shadow: 3px 3px #33301B;
+}
+
+button {
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: translate(3px, 3px);
+}
+
+.w-25{
+    width: 25%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.w-33{
+    width: 33.3333%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+.j-between{
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.GAB{
+    gap: 10px;
+}
+
+/* ------------------End general styles---------------------- */
+
+
+/* ---------------------- START HOME ---------------------------- */
+/* .fa-bars{
+    display: none;
+} */
+
+a:hover{
+    color:rgb(238, 165, 29);
+}
+
+.navbar{
+    padding:10px 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 2px black;
+    margin-top: 16px;
+    position: fixed;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.links ul i{
+    color: #D1D5DC;
+}
+
+.logo {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.logo span{
+    color: #FF6900;
+}
+
+.content button{
+    padding: 10px 15px;
+    background-color: #FFD15B;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+#home{
+    width: 100%;
+    min-height: 105vh;
+    background-color: #FFF085;
+    position: relative;
+    overflow: hidden;
+    border: solid 2.5px black;
+}
+
+.shape1{
+    background-color: #E5D877;
+    width: 125px;
+    height: 125px;
+    transform: rotate(10deg);
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.shape2{
+    background-color: #ffc881a8;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 180px;
+    right: 70px;
+}
+
+.hero{
+    margin-top: 120px;
+}
+
+.home-text .badge{
+    width: 165px;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    transform: rotate(-2deg);
+    color: white;
+    font-weight: 700;
+    font-size: small;
+    margin-bottom: 30px;
+}
+
+.home-text .badge p{
+    position: absolute;
+    top:15px ;
+    left: 20px;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 900;
+    flex-direction: column;
+}
+
+.BRUTAL{
+    color: black;
+}
+
+.THOUGHTS{
+    color: #E7000B;
+}
+
+.BOLD-IDEAS{
+    color: #155DFC;
+}
+
+.heading p{
+    margin-top: 40px;
+    width: 576px;
+    height: 125px;
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 25px;
+    padding: 10px 15px;
+}
+
+.home-text .btnS button{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    width: 220px;
+    height: 65px;
+    cursor: pointer;
+    border: solid 3px black;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 5px 5px black;
+}
+
+.home-text .btnS .b2{
+    background-color: white;
+    color: #000000;
+}
+
+.image{
+    width: 580px;
+    height: 375px;
+    border: solid 5px black;
+    position: absolute;
+    top: 140px;
+    right: 10px;
+    box-shadow: 6px 6px black;
+    transform: rotate(2deg);
+    transition: all .3s ease;
+}
+
+.image:hover{
+    transform: translate(-3px,-3px) rotate(2deg);
+}
+
+.image img{
+    object-fit: cover;
+}
+
+.home-image{
+    position:relative;
+}
+
+.home-image .badge{
+    width: 120px;
+    height: 45px;
+    background-color: #FB2C36;
+    color: white;
+    border: solid 2px black;
+    padding: 10px 17px;
+    font-weight: 650;
+    align-content: center;
+    transform: rotate(13deg);
+    position: absolute;
+    top: 125px;
+    right: -7px;
+}
+
+/* ---------------------- END HOME ---------------------------- */
+
+
+/* ---------------------- START LATEST ---------------------------- */
+
+/* ------------------------ L-LATEST ------------------------- */
+
+#latest{
+    width: 100%;
+    min-height: 100vh ;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    position: relative;
+    border: solid 2.5px black;
+}
+
+.L-latest{
+    width: 70%;
+    margin-top: 75px;
+    margin-bottom: 60px;
+}
+
+.heading-2{
+    position: relative;
+    width: 100%;
+}
+
+.heading-2 h2{
+    margin-bottom: 45px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.heading-2 p{
+    width: 180px;
+    height: 45px;
+    background-color: black;
+    position: relative;
+    transform: rotate(2deg);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    align-content: center;
+    padding-left: 13px;
+}
+
+.icon{
+    position: relative;
+    width: 25%;
+    height: inherit;
+}
+
+/* --------------------- GENERAL CARD ------------------------- */
+
+.card{
+    width: 100%;
+    height: inherit;
+    background-color: #FFFFFF;
+    border: solid 4px black;
+    box-shadow: 4px 4px black;
+    margin-bottom: 35px;
+    padding: 30px 30px;
+    transition: transform 0.3s ease;
+}
+
+#latest .card:hover {
+    transform: translate(-4px, -4px);
+}
+
+.model{
+    border: solid 2px black;
+    object-fit: fill;
+    width: 160px;
+    height: 130px;
+}
+
+.by{
+    width: 20%;
+}
+
+.date{
+    width: 20%;
+}
+
+.time{
+    width: 20%;
+}
+
+.likes{
+    width: 20%;
+    color: #E7000B;
+}
+
+/* -------------------------- CARD-1 --------------------- */
+
+#card-1 .icon p{
+    background-color: #FB2C36;
+    width: 50px;
+    height: 28px;
+    border: solid 2px black;
+    color: white;
+    transform: rotate(10deg);
+    align-content: center;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    position: absolute;
+    top: -10px;
+    left: 120px;
+}
+
+.reading{
+    position: relative;
+    width: 70%;
+    height: inherit;
+    color: #000000;
+}
+
+.tech{
+    background-color: #FFDF20;
+    color: black;
+    width: 60px;
+    height: 28px;
+    border: solid 2px  black;
+    box-shadow: 3px 3px black;
+    align-content: center;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    transform: rotate(-2deg);
+    margin-bottom: 15px;
+}
+
+.reading h4{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.description{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#card-1:hover h4 {
+    color: #E7000B;
+}
+
+/* ------------------------- CARD-2 -------------------------- */
+
+#card-2 .icon p{
+    background-color: #2B7FFF;
+    width: 45px;
+    height: 28px;
+    border: solid 2px black;
+    color: white;
+    transform: rotate(-15deg);
+    align-content: center;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    position: absolute;
+    top: -10px;
+    left: 120px;
+}
+
+.design{
+    background-color: #7BF1A8;
+    color: black;
+    width: 70px;
+    height: 28px;
+    border: solid 2px  black;
+    box-shadow: 3px 3px black;
+    align-content: center;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    transform: rotate(2deg);
+    margin-bottom: 15px;
+}
+
+#card-2:hover h4 {
+    color: #155DFC;
+}
+
+/* -------------------------- CARD-3 ---------------------- */
+
+#card-3 .icon p{
+    background-color: #AD46FF;
+    width: 55px;
+    height: 28px;
+    border: solid 2px black;
+    color: white;
+    transform: rotate(45deg);
+    align-content: center;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    position: absolute;
+    top: -10px;
+    left: 110px;
+}
+
+.culture{
+    background-color: #FDA5D5;
+    color: black;
+    width: 85px;
+    height: 28px;
+    border: solid 2px  black;
+    box-shadow: 3px 3px black;
+    align-content: center;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    transform: rotate(-2deg);
+    margin-bottom: 15px;
+}
+
+#card-3 .txt{
+    margin-left: -40px;
+}
+
+#card-3:hover h4 {
+    color: #9810FA;
+}
+
+#card-3{
+    margin-bottom: 50px;
+}
+
+/* ------------------------ L-LATEST BUTTON ------------------------- */
+
+.latest-btn button{
+    background-color: black;
+    color: white;
+    width: 320px;
+    height: 60px;
+    cursor: pointer;
+    border: solid 3px black;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 5px 5px black;
+    margin-bottom: 20px;
+}
+
+/* ------------------------ R-LATEST ------------------------- */
+
+/* ---------------------- 1ST SQUARE --------------------------*/
+
+.R-latest{
+    width: 28%;
+    margin-top: 75px;
+    margin-bottom: 60px;
+}
+
+.square{
+    width: 100%;
+    height: inherit;
+    background-color: white;
+    border: solid 4px black;
+    box-shadow: 4px 4px black;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+}
+
+.square h3{
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.num{
+    margin-right: 15px;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.txt-2{
+    padding-top: 30px;
+}
+
+.line h5{
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+.line p{
+    color: #525252;
+    font-size: 13.5px;
+}
+
+#n-1{
+    color: #FB2C36;
+}
+
+#n-2{
+    color: #2B7FFF;
+}
+
+#n-3{
+    color: #AD46FF;
+}
+
+#l-1:hover h5{
+    color: #FB2C36;
+}
+
+#l-2:hover h5{
+    color: #2B7FFF;
+}
+
+#l-3:hover h5{
+    color: #AD46FF;
+}
+
+/* ---------------------- 2ND SQUARE --------------------------*/
+
+#square-2 h3{
+    margin-bottom: 25px;
+}
+
+.bar{
+    width: 100%;
+    height: 50px;
+    border: solid 2px black;
+    margin-bottom: 12px;
+    align-content: center;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.bar:hover{
+    transform: translate(-3px,-3px);
+    /* box-shadow: 3px 3px black; */
+}
+
+#bar-1{
+    background-color: #ffde203f;
+}
+
+#bar-1:hover{
+    background-color: #ffde20;
+}
+
+#bar-2{
+    background-color: #7bf1a84f;
+}
+
+#bar-2:hover{
+    background-color:#7BF1A8;
+}
+
+#bar-3{
+    background-color: #fda5d546;
+}
+
+#bar-3:hover{
+    background-color:#FDA5D5;
+}
+
+#bar-4{
+    background-color: #DBEAFE;
+}
+
+#bar-4:hover{
+    background-color:#8EC5FF;
+}
+
+#bar-5{
+    background-color: #F3E8FF;
+}
+
+#bar-5:hover{
+    background-color: #DAB2FF;
+}
+
+/* ---------------------- END LATEST ---------------------------- */
+
+/* ---------------------- START AUTHORS ---------------------------- */
+
+#authors{
+    width: 100%;
+    min-height: 105vh;
+    background-color: #FFD230;
+    overflow: hidden;
+    position: relative;
+    border: solid 2.5px black;
+}
+
+.shape3{
+    background-color:#E5BD2B;
+    width: 160px;
+    height: 160px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.heading-3 h2{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 10px;
+}
+
+.heading-3 p{
+    font-size: 20px;
+    font-weight: 550;
+    color: #525252;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.line-1{
+    width: 130px;
+    height: 8px;
+    background-color: #000000;
+    position: relative;
+    left: 46%;
+    transform: translateX(-50%);
+    transform-origin: center;
+    transform: rotate(2deg);
+    margin-bottom: 60px;
+}
+
+.profile{
+    width: 31.5%;
+    height: inherit;
+    border: solid 4px black;
+    box-shadow: 5px 5px black;
+    transition-property: transform ;
+    transition-duration: .5s;
+}
+
+.avatar{
+    width: 34%;
+    height: 130px;
+    border: solid 4px black;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.top-section{
+    position: relative;
+}
+
+.profile-text{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.profile-text h3{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 7px;
+}
+
+.profile-text h5{
+    color: #525252;
+    font-size: 16.5px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.profile-text p{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 450;
+    margin-bottom: 25px;
+}
+
+#profile-1{
+    background-color: #FEF9C2;
+}
+
+#profile-2{
+    background-color: #DBFCE7;
+}
+
+#profile-3{
+    background-color: #FCE7F3;
+}
+
+#profile-1 .top-section p{
+    background-color: #FB2C36;
+    width: 78px;
+    height: 30px;
+    border: solid 2px black;
+    color: white;
+    transform: rotate(10deg);
+    align-content: center;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top: -5px;
+    right: 20px;
+}
+
+#profile-2 .top-section p{
+    background-color: #2B7FFF;
+    width: 50px;
+    height: 28px;
+    border: solid 2px black;
+    color: white;
+    transform: rotate(-15deg);
+    align-content: center;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top: -5px;
+    right: 25px;
+}
+
+#profile-3 .top-section p{
+    background-color: #AD46FF;
+    width: 55px;
+    height: 28px;
+    border: solid 2px black;
+    color: white;
+    transform: rotate(45deg);
+    align-content: center;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    position: absolute;
+    top: -5px;
+    right: 25px;
+}
+
+.icons{
+    width: 50%;
+    margin: auto;
+}
+
+.icons i{
+    width: 48px;
+    height: 48px;
+    color: white;
+    margin: auto;
+    padding-top: 15px;
+    margin-bottom: 30px;
+    border: solid 2px #000000;
+    transition: all .3s ease;
+}
+
+#authors .icons i{
+    background-color: #000000;
+}
+
+#profile-3 .icons i{
+    margin-top: 20px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.Twitter:hover i{
+    background-color: #1DA1F2 !important;
+    transform: translate(-5px,-5px);
+}
+
+.LinkedIn:hover i{
+    background-color: #155DFC !important;
+    transform: translate(-5px,-5px);
+}
+
+.Instgram:hover i{
+    background-color: #E60076 !important;
+    transform: translate(-5px,-5px);
+}
+
+.profile:hover{
+    transform: translate(-3px,-3px);
+}
+
+#profile-1:hover h3{
+    color: #E7000B;
+}
+
+#profile-2:hover h3{
+    color: #155DFC;
+}
+
+#profile-3:hover h3{
+    color: #9810FA;
+}
+
+/* ---------------------- END AUTHORS ---------------------------- */
+
+/* ---------------------- START COMMUNITY ---------------------------- */
+
+#community{
+    width: 100%;
+    min-height: 150vh;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    position: relative;
+    border: solid 2.5px black;
+}
+
+.heading-4 h2{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 10px;
+}
+
+.heading-4 p{
+    font-size: 20px;
+    font-weight: 550;
+    color: #525252;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.line-2{
+    width: 130px;
+    height: 8px;
+    background-color: #000000;
+    position: relative;
+    left: 46%;
+    transform: translateX(-50%);
+    transform-origin: center;
+    transform: rotate(-1deg);
+    margin-bottom: 60px;
+}
+
+/* ------------------------ L-COMMUNITY  ------------------------- */
+
+.L-community{
+    width: 48%;
+    height: inherit;
+}
+
+.L-community .card{
+    border: solid 2px black;
+    box-shadow: 3px 3px black;
+    padding: 20px 15px;
+}
+
+.L-community h3{
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.L-community .card p{
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+
+.note i{
+    width: 48px;
+    height: 48px;
+    color: white;
+    margin: auto;
+    padding-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    border: solid 2px #000000;
+}
+
+.note p{
+    margin-top: 13px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.true i{
+    background-color: #FB2C36;
+}
+
+.discord i{
+    background-color: #2B7FFF;
+}
+
+.star i{
+    background-color: #AD46FF;
+}
+
+.pen i{
+    background-color: #00C950;
+}
+
+.b3{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    width: 370px;
+    height: 78px;
+    cursor: pointer;
+    border: solid 3px black;
+    margin-top: 28px;
+    font-weight: 700;
+    font-size: 22px;
+    box-shadow: 6px 6px black;
+}
+/* ------------------------ R-COMMUNITY  ------------------------- */
+
+.R-community{
+    width: 48%;
+    height: inherit;
+    background-color: #FFFFFF;
+}
+
+.R-community h4{
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 14px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.ticket{
+    border: solid 2px black;
+    width: 96%;
+    margin: auto;
+    height: inherit;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+.avatar-p2{
+    width: 11%;
+    border: solid 2px black;
+    margin-right: 15px;
+}
+
+.role{
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+
+.job{
+    font-weight: 450;
+    font-size: 14px;
+    color: #525252;
+}
+
+#ticket-1{
+    background-color: #FEF2F2;
+}
+
+#ticket-2{
+    background-color:#EFF6FF;
+}
+
+#ticket-3{
+    background-color: #FAF5FF;
+}
+
+/* ---------------------- END COMMUNITY ---------------------------- */
+
+/* ---------------------- START FOOTER ---------------------------- */
+
+#footer{
+    width: 100%;
+    background-color: #000000;
+    min-height: inherit;
+    color: white;
+}
+
+.ux-review{
+    width: 40%;
+    height: inherit;
+}
+
+.the-ux-review{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.the-ux-review i{
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    margin-right: 20px;
+    padding-top: 18px;
+}
+
+.the-ux-review h3{
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.ux-review p{
+    font-size: 18px;
+}
+
+
+.categories{
+    margin-top: 80px;
+    width: 18%;
+    height: inherit;
+}
+
+.categories h4{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+#footer a{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#footer .container a:hover{
+    color: #FFDF20;
+}
+
+.categories li{
+    margin-bottom: 18px;
+}
+
+.newsletter{
+    margin-top: 80px;
+    width: 40%;
+    height: inherit;
+}
+
+.newsletter h4{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.newsletter p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.newsletter input{
+    width: 100%;
+    padding: 18px 20px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #d6d6d6d5;
+    font-size: 18px;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    color: #a7a2a2;
+    font-size: 18px;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+#footer .newsletter button{
+    width: 100%;
+    padding: 18px 0;
+    background-color: #ffd400;
+    color: #000;
+    border: none;
+    border-bottom:solid 5px #b48e02;
+    border-right:solid 5px #b48e02;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.line-3{
+    width: 100%;
+    height: 4px;
+    background-color:white;
+    margin-bottom: 35px;
+}
+
+.rights p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.privacy{
+    width: 35%;
+    margin-bottom: 80px;
+}
+
+#footer .privacy a{
+    color: white;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+/* ---------------------- END FOOTER ---------------------------- */
+
+
+
+/* ---------------------- FINISH STYLE ---------------------------- */
